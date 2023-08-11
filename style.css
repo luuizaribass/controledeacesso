@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* reset */
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* começo */
+
+body {
+  background-color: #340938;
+}
+
+#header .container {
+  margin: 45px 45px;
+  background-color: white;
+  height: 640px;
+  box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.219);
+}
+
+.logo {
+  width: 350px;
+  margin-left: 500px;
+}
+
+.texto {
+  font: 500 20px 'Poppins', sans-serif;
+  text-align: center;
+  color: rgb(104, 104, 104);
+}
+
+.acesso h1{
+  font: 700 30px 'Poppins', sans-serif;
+  text-align: center;
+  color: #340938;
+}
+
+
+/* caixa de identificaçao */
+
+.input {
+  margin-left: 490px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  }
+  
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+/* fim caixa de identificaçao */
+
+/* button */
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+
+
+.box {
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+  
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+  
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+  
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+  
+.box:hover:before {
+  border-color: #340938;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+  
+.box:hover:after {
+  border-color:#340938;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+/* fim button */
